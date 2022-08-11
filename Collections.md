@@ -4,6 +4,9 @@
 - é um framework
 - principais interfaces: List, Set, Map
 - Stream API ajuda na manipulação de Collections
+- [Código com exemplos](https://github.com/olimaandreza/aprendendoJava/blob/178465131cd14910e3c8359eab87a5c904438e58/src/Colecoes.java)
+
+
 
 ## Composição
 - Interfaces: funciona como um contrato que quando assumido pela classe, deve ser implementado. Quando uma classe implementa uma Interface, ela se compromete a realizar todos os comportamentos que a interface disponibiliza
@@ -185,6 +188,7 @@
                 Map<String,Double> dicionario = new TreeMap<>(outroDicionario);
 
 - métodos:
+               
                 dicionario.put("chave",valor); // no lugar de .add, adiciona um novo ou substitui existente
                 dicionario.toString();
                 dicionario.containsKey("chave");
@@ -195,7 +199,7 @@
                 dicionario.remove();
                 dicionario.clear();
                 dicionario.isEmpty();
-                
+
                 import java.util.Collections;
                 Double valorMax = Collections.max(dicionario.values());
                 Set<Map.Entry<String,Double>>entries = dicionario.entrySet(); // interface entry retorna um Set com elementos do tipo entry
