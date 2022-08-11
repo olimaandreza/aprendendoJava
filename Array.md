@@ -28,3 +28,4 @@
 ## Operações com arrays
 
 - array.length -> mostra o tamanho, quando tem duas dimensões, mostra o número de linhas
+- [Código com exemplos](https://github.com/olimaandreza/aprendendoJava/blob/f9ed1242c2961ce2a7e6a16bf6e7927dde37e945/src/TrabalhandoArray.java)
