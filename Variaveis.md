@@ -3,9 +3,9 @@
 - Instância: pertence a um objeto, objetos são instâncias de classe
         - exemplo de criação de objeto:
 
-                Classe objeto = new Classe(); //Chama o construtor
+                Classe objeto = new Classe(); //Chama o construtor da classe Classe
 
-- Classe: pertence a classe, é uma estrutura que abstrai um conjunto de objetos com características similares e define o comportamento de seus **objetos** através de **métodos** e os estados desses objetos através de **atributos**.
+- Classe: é uma estrutura que abstrai um conjunto de objetos com características similares e define o comportamento de seus **objetos** através de [**métodos**](https://github.com/olimaandreza/aprendendoJava/blob/ef6011062d6b9e9cdffbd3fcd407caf83e9e8ebe/Metodos.md) e os estados desses objetos através de **atributos**.
     - Boa prática começar com letra maiúscula, com nome significativo no contexto
     - Geralmente são representadas por substantivos
     - Exemplo de criação de classe:
@@ -20,7 +20,7 @@
                                 this.variavelInt = variavelInt;
                         }
 
-                        //getter porque está private ->  método
+                        //getters
                         public String getVariavelString(){
                                 return variavelString;
                         }
@@ -38,8 +38,8 @@
     - protected: pode passar atributos para classes "filho" ou associação dentro do mesmo pacote
     - private: só pode ser usada dentro da classe
 2. Modificador (opcional)
-    - static
-    - final: indica um valor que não vai ser alterado, é constante
+    - static: faz com que a variável em questão não esteja “amarrada” a um objeto. É como se, apesar de estar dentro de uma classe, na verdade não pertencesse somente ao escopo daquela classe
+    - final: indica um valor que não vai ser alterado, é constante, obriga a inicialização da variável junto com sua definição
 3. Tipo de Dado: sempre deve ser informado no momento de criação da variável, representa os valores e operações que as variáveis podem assumir e sofrer, exemplos:
     - char: armazena um caracter ou unicode (16 bits), usa aspas simples na definição de caracteres isolados, ex:
     
@@ -50,7 +50,7 @@
             String s="Qualquer conjunto de caracteres";
 
     - int: números inteiros (32 bits)
-    - long: números inteiros (64 bits), deve terminar com "l"
+    - long: números inteiros (64 bits), deve terminar com "L" para indicar explicitamente
 
             long l1=10000000L;
 
@@ -60,7 +60,7 @@
 
     - double: números reais (64 bits)
     - boolean: "true" ou "false"
-    - Objeto:
+    - Objeto: criado a partir de uma classe
     
     :bulb: Ser de 32 ou 64 bits indica quana informação consegue ser armazenada, ou seja, 64 bits consegue armazenar mais informações (números maiores) que 32 bits
 4. Nome: nome da variável que está sendo criada 
@@ -80,17 +80,16 @@ Exemplo:
 - usar nomes expressivos, de modo que seja possível entender o propósito da variável
 - usar notação camelo
             
-        String nomeEmpresa
+        String nomeEmpresa;
 - quando for uma constante (final), usar letras maiúsculas, com separação por "_" no lugar da notação camelo, 
 
-        final double SALARIO_MINIMO=1000.5
+        final double SALARIO_MINIMO=1000.5;
 
 - usar os tipos de dados de forma adequada para cada informação para evitar pós-processamentos desnecessários
 
-:bulb: Método main é usado para disparar a execução do programa, onde são criadas variáveis iniciais.
 
 ## Casting
-- Upcasting/Promover (**implícito**): transforma uma variável de um tipo menos específico para o mais específico. Ex: tipo que armazena menos informações para o que armazena mais informações
+- Upcasting/Promover (**implícito**): transforma uma variável de um tipo mais específico para o menos específico. Ex: tipo que armazena menos informações para o que armazena mais informações
         - exemplo em classe:
 
                         Class ClasseB extends ClasseA {
@@ -98,7 +97,7 @@ Exemplo:
                         }
                         ClasseA objetoA = new ClasseB(); //cria um objeto da classe mãe a partir de uma classe filha (upcast de B).
                         
-- Downcasting/Regredir (deve ser **explícito**): transforma uma variável de um tipo mais específico para o menos específico. Ex: tipo que armazena mais informações para o que armazena menos informações --> pode haver perda de informação! Não é recomendável.
+- Downcasting/Regredir (deve ser **explícito**): transforma uma variável de um tipo menos específico para o mais específico. Ex: tipo que armazena mais informações para o que armazena menos informações --> pode haver perda de informação! Não é recomendável.
                 - exemplo em classe:
 
                         Class ClasseB extends ClasseA {
