@@ -1,6 +1,7 @@
 # Operadores de Controle de Fluxo
 
 ## Controle de Fluxo de Decisão
+[Código com exemplos](https://github.com/olimaandreza/aprendendoJava/blob/9f60a9f08c6bd6b45cfe02a8ae4c17c4e966c677/src/Repeticao.java)
 
 1. If
 - preferível ao switch se houver mais de uma variável
