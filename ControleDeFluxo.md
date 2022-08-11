@@ -7,7 +7,6 @@
 - evitar muitos ifs aninhados
 - criar variáveis intermediárias para as condições para diminuir o tamanho do código dos ifs
 - se só tem uma linha no bloco, não é necessário abrir chaves
-- não suporta expressões aritméticas?
 
         if(condição){
             ...
@@ -27,7 +26,7 @@
             ...;
         }
 
-3. Switch
+2. Switch
 - tipos de variável: byte, short, char, int, Enum, String
 - usar switch para valores exatos e if para booleanos
 - evitar usar o default para cases genéricos, usar para valores inválidos
@@ -45,7 +44,7 @@
                 ...;
                 break;
         }
-4. Operador Ternário
+3. Operador Ternário
 - deve ser evitado, devido à sintaxe dificultar a leitura quanto maior são os pedaços de código
 
         condição ? ação se true : ação se false;
@@ -81,10 +80,11 @@
         } while (condição);
 
 > :bulb: inicialização do iterador: exemplo int i = 0
-> Declaração do iterador do tipo do array: int i, String s, etc.
+> 
+> :bulb: Declaração do iterador do tipo do array: int i, String s, etc.
 
 ## Controle de Fluxo de Interrupção
 
 1. Break: usado para interromper fluxo de repetição
 2. Continue: usado para interromper a repetição atual e passar para o teste da próxima repetição (é pouco utilizado)
-3. Return
+3. Return: retorna resultado (em métodos)
