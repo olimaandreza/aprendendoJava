@@ -1,18 +1,15 @@
-## Getting Started
+# Aprendendo Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Estrutura de pastas
 
-## Folder Structure
+- `src`: pasta com código fonte
+- `lib`: pasta com dependências
+- `bin`: resultados compilados
 
-The workspace contains two folders by default, where:
+## Tópicos de aprendizado
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- [Variáveis](https://github.com/olimaandreza/aprendendoJava/blob/3df359b1c39d40bccbafa3f0390946926a7965bd/Variaveis.md)
+- [Controle de fluxo](https://github.com/olimaandreza/aprendendoJava/blob/3df359b1c39d40bccbafa3f0390946926a7965bd/ControleDeFluxo.md)
+- [Array](https://github.com/olimaandreza/aprendendoJava/blob/3df359b1c39d40bccbafa3f0390946926a7965bd/Array.md)
+- [Métodos](https://github.com/olimaandreza/aprendendoJava/blob/3df359b1c39d40bccbafa3f0390946926a7965bd/Metodos.md)
+- [Collections](https://github.com/olimaandreza/aprendendoJava/blob/3df359b1c39d40bccbafa3f0390946926a7965bd/Collections.md)
