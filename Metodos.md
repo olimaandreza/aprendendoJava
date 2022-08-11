@@ -105,6 +105,7 @@ Pode ser por meio de uma classe ou de um objeto:
 
         }
 
+        //construtor com atributos
         Classe(tipo atributo1, tipo atributo2){
             this.atributo1 = atributo1;
             this.atributo2 = atributo2;
@@ -129,3 +130,4 @@ Pode ser por meio de uma classe ou de um objeto:
         void setAtributo(int atributo) {
             this.atributo = atributo;
         }
+- main: usado para disparar a execução do programa
